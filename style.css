@@ -1561,3 +1561,165 @@ body {
     }
 
 }
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+/* Tablet Devices */
+@media (max-width: 900px) {
+
+    .container {
+        width: 90%;
+    }
+
+    nav ul {
+        gap: 18px;
+    }
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .about-grid,
+    .education-grid,
+    .skills-grid,
+    .interest-grid,
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 92%;
+        margin: auto;
+    }
+
+    /* Navigation */
+
+    nav {
+        padding: 15px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    /* Hero Section */
+
+    .hero {
+        padding: 55px 0 45px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.3rem;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* Profile Image */
+
+    .profile-image {
+        width: 160px;
+        height: 160px;
+        margin: 0 auto 25px;
+    }
+
+    /* Sections */
+
+    section {
+        padding: 55px 0;
+    }
+
+    section h2 {
+        font-size: 1.7rem;
+    }
+
+    section h3 {
+        font-size: 1.15rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    /* Convert grids into single-column layouts */
+
+    .about-grid,
+    .education-grid,
+    .skills-grid,
+    .interest-grid,
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Cards */
+
+    .card {
+        padding: 22px;
+    }
+
+    /* Lists */
+
+    ul,
+    ol {
+        padding-left: 20px;
+    }
+
+    /* Footer */
+
+    footer {
+        text-align: center;
+        padding: 25px 15px;
+    }
+
+}
+
+
+/* Very Small Screens */
+
+@media (max-width: 400px) {
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .profile-image {
+        width: 135px;
+        height: 135px;
+    }
+
+}
